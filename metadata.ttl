@@ -44,7 +44,7 @@
         <http://purl.org/dc/terms/> ,
         <http://www.nanopub.org/nschema#>
     ;
-    rb:hasStreamElementCount 10468258 ;
+    rb:hasStreamElementCount 10468257 ;
     rb:hasStreamElementType rb:quads ;
     rb:hasStreamElementSplit [
 
