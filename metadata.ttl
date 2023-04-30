@@ -15,42 +15,45 @@
 :dataset
     a rb:Dataset, dcat:Dataset ;
     dcterms:conformsTo <https://w3id.org/riverbench/schema/metadata> ;
-    dcterms:identifier "[YOUR DATASET ID (only a-z, 0-9, -)]" ;
+    dcterms:identifier "nanopubs" ;
 
-    dcterms:title "[HUMAN-READABLE NAME OF YOUR DATASET]"@en ;
-    dcterms:description "[ELABORATED DESCRIPTION OF THE DATASET]"@en ;
-    dcterms:issued "[DATE OF INITIAL SUBMISSION, YYYY-MM-DD]"^^xsd:date ;
+    dcterms:title "Nanopublications"@en ;
+    dcterms:description "Nanopublications are small units of publishable information, used for scientific results and more. This dataset is based on a subset of [a dump of all available nanopublications](https://zenodo.org/record/1213293) as of April 5, 2018. Each nanopub consists of several RDF graphs and thus is an RDF dataset. The included data is primarily from the biomedical domain. More information: [paper](https://arxiv.org/abs/1809.06532), [website](https://nanopub.net/)."@en ;
+    dcterms:issued "2023-04-30"^^xsd:date ;
 
     # License and attribution
-    # SPDX license list: https://spdx.org/licenses/
-    dcterms:license <SPDX-LICENSE-URL> ;
-    # Feel free to add more creators or use any FOAF properties here
+    dcterms:license <https://spdx.org/licenses/CC-BY-SA-3.0> ;
     dcterms:creator [
-        foaf:name "[YOUR NAME]" ;
-        foaf:nick "[YOUR NICK]" ;
-        foaf:homepage <LINK-TO-YOUR-PAGE>
+        foaf:name "Authors of the included nanopublications (cited within the dataset)" ;
+    ] , [
+        foaf:name "Tobias Kuhn" ;
+        foaf:homepage <https://orcid.org/0000-0002-1267-0234> ;
+        rdfs:comment "Author of the [nanopublications dump](https://zenodo.org/record/1213293)"@en ;
+    ] , [
+        foaf:name "Piotr Sowiński" ;
+        foaf:nick "Ostrzyciel" ;
+        foaf:homepage <https://github.com/Ostrzyciel>, <https://orcid.org/0000-0002-2543-9461> ;
     ] ;
     
     # Themes
-    # Full list of themes: https://w3id.org/riverbench/schema/theme.ttl
-    dcat:theme <ADD-AT-LEAST-ONE-THEME> ;
+    dcat:theme rbt:scientific, rbt:biomedical, rbt:bibliographical ;
 
     # Technical metadata
-    # URIs of the ontologies used in the dataset
-    rb:usesOntology <ADD-ONTOLOGY-URIS> ;
-    # Set to number of stream elements in the dataset
-    rb:hasStreamElementCount -1 ;
-    # One of: rb:triples, rb:quads, rb:graphs
-    rb:hasStreamElementType <STREAM-ELEMENT-TYPE> ;
+    rb:usesOntology 
+        <https://www.w3.org/ns/prov-o> ,
+        <http://purl.org/dc/terms/> ,
+        <http://www.nanopub.org/nschema#>
+    ;
+    rb:hasStreamElementCount 10468258 ;
+    rb:hasStreamElementType rb:quads ;
     rb:hasStreamElementSplit [
-        a <SPLIT-TYPE> ;
-        rdfs:comment "[FURTHER EXPLANATION ON THE SPLIT]"@en
+
+        a rb:TopicStreamElementSplit ;
+        rdfs:comment "Each stream element is one nanopublication."@en
     ] ;
-    rb:conformsToRdf11 "" ; # true or false
-    rb:conformsToRdfStarDraft_20211217 "" ; # true or false
-    rb:usesGeneralizedRdfDatasets "" ; # true or false
-    rb:usesGeneralizedTriples "" ; # true or false
-    rb:usesRdfStar "" ; # true or false
-    
-    # Add any additional metadata here (e.g., temporal resolution)
+    rb:conformsToRdf11 true ;
+    rb:conformsToRdfStarDraft_20211217 true ;
+    rb:usesGeneralizedRdfDatasets false ;
+    rb:usesGeneralizedTriples false ;
+    rb:usesRdfStar false ;    
 .
