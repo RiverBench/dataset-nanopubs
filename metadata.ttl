@@ -18,7 +18,7 @@
     dcterms:identifier "nanopubs" ;
 
     dcterms:title "Nanopublications"@en ;
-    dcterms:description "Nanopublications are small units of publishable information, used for scientific results and more. This dataset is based on a subset of [a dump of all available nanopublications](https://zenodo.org/record/1213293) as of April 5, 2018. Each nanopub consists of several RDF graphs and thus is an RDF dataset. The included data is primarily from the biomedical domain. More information: [paper](https://arxiv.org/abs/1809.06532), [website](https://nanopub.net/)."@en ;
+    dcterms:description "Nanopublications are small units of publishable information, used for scientific results and more. This dataset is based on a subset of [a dump of all available nanopublications](https://zenodo.org/record/1213293) as of April 5, 2018. Only the first 5M of freely-licensed nanopubs were included. Each nanopub consists of several RDF graphs and thus is an RDF dataset. The included data is primarily from the biomedical domain. More information: [paper](https://arxiv.org/abs/1809.06532), [website](https://nanopub.net/)."@en ;
     dcterms:issued "2023-04-30"^^xsd:date ;
 
     # License and attribution
@@ -44,10 +44,9 @@
         <http://purl.org/dc/terms/> ,
         <http://www.nanopub.org/nschema#>
     ;
-    rb:hasStreamElementCount 10468257 ;
+    rb:hasStreamElementCount 5000000 ;
     rb:hasStreamElementType rb:quads ;
     rb:hasStreamElementSplit [
-
         a rb:TopicStreamElementSplit ;
         rdfs:comment "Each stream element is one nanopublication."@en
     ] ;
