@@ -24,6 +24,7 @@
 
     # License and attribution
     dcterms:license <https://spdx.org/licenses/CC-BY-SA-3.0> ;
+    dcterms:rights "This dataset only includes freely-licensed publications (CC BY, CC BY-SA, or ODbL licenses). Each nanopublication includes information about its original authors and is self-citing. The dataset is marked as under CC BY-SA, as this is the most restrictive license in the dataset."@en ;
     dcterms:creator [
         foaf:name "Authors of the included nanopublications (cited within the dataset)" ;
         rbdoc:hasDocWeight 1 ;
