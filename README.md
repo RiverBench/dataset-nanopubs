@@ -42,6 +42,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
             - [https://github.com/Ostrzyciel](https://github.com/Ostrzyciel)
             - [https://orcid.org/0000-0002-2543-9461](https://orcid.org/0000-0002-2543-9461)
 - **<abbr title="A legal document giving official permission to do something with the resource.">License</abbr>**: [https://spdx.org/licenses/CC-BY-SA-3.0](https://spdx.org/licenses/CC-BY-SA-3.0)
+- **<abbr title="Information about rights held in and over the resource.">Rights</abbr>**: This dataset only includes freely-licensed publications (CC BY, CC BY-SA, or ODbL licenses). Each nanopublication includes information about its original authors and is self-citing. The dataset is marked as under CC BY-SA, as this is the most restrictive license in the dataset.
 - **<abbr title="Date of formal issuance of the resource.">Date Issued</abbr>**: 2023-04-30
 - **<abbr title="Date on which the resource was changed.">Date Modified</abbr>**: 2023-05-02
 - **<abbr title="A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.">Landing page</abbr>**: [nanopubs (dev)](https://w3id.org/riverbench/datasets/nanopubs/dev)
