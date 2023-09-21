@@ -22,8 +22,8 @@ Full documentation for all versions can be found [on the website](https://w3id.o
 ## General information
 
 - **<abbr title="A name given to the resource.">Title</abbr>**: Nanopublications
-- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: nanopubs
-- **<abbr title="Version tag of an artifact">Has version</abbr>**: dev
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: `nanopubs`
+- **<abbr title="Version tag of an artifact">Has version</abbr>**: `dev`
 - **<abbr title="A main category of the resource. A resource can have multiple themes.">Theme</abbr>**: 
     - <abbr title="Datasets with bibliographical information.">Bibliographical</abbr> ([rbt:bibliographical](https://w3id.org/riverbench/schema/theme#bibliographical))
     - <abbr title="Datasets with biomedical information.">Biomedical</abbr> ([rbt:biomedical](https://w3id.org/riverbench/schema/theme#biomedical))
@@ -45,7 +45,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
 - **<abbr title="A related resource from which the described resource is derived.">Source</abbr>**: [https://doi.org/10.5281/zenodo.1213293](https://doi.org/10.5281/zenodo.1213293)
 - **<abbr title="Information about rights held in and over the resource.">Rights</abbr>**: This dataset only includes freely-licensed publications (CC BY, CC BY-SA, or ODbL licenses). Each nanopublication includes information about its original authors and is self-citing. The dataset is marked as under CC BY-SA, as this is the most restrictive license in the dataset.
 - **<abbr title="Date of formal issuance of the resource.">Date Issued</abbr>**: 2023-04-30
-- **<abbr title="Date on which the resource was changed.">Date Modified</abbr>**: 2023-05-08
+- **<abbr title="Date on which the resource was changed.">Date Modified</abbr>**: 2023-09-21
 - **<abbr title="A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.">Landing page</abbr>**: [nanopubs (dev)](https://w3id.org/riverbench/datasets/nanopubs/dev)
 - **<abbr title="An established standard to which the described resource conforms.">Conforms To</abbr>**: Metadata ([https://w3id.org/riverbench/schema/metadata](https://w3id.org/riverbench/schema/metadata))
 
@@ -71,8 +71,8 @@ Full documentation for all versions can be found [on the website](https://w3id.o
 ### <a name="stream-full"></a> Full quad stream distribution
 
 - **<abbr title="A name given to the resource.">Title</abbr>**: Full quad stream distribution
-- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: stream-full
-- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: stream_full.tar.gz
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: `stream-full`
+- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `stream_full.tar.gz`
 - **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
     - <abbr title="A full distribution, including all data in the dataset.">Full distribution</abbr> ([rb:fullDistribution](https://w3id.org/riverbench/schema/metadata#fullDistribution))
     - <abbr title="The dataset is distributed as a stream of RDF quads.">Quad stream distribution</abbr> ([rb:quadStreamDistribution](https://w3id.org/riverbench/schema/metadata#quadStreamDistribution))
@@ -83,11 +83,26 @@ Full documentation for all versions can be found [on the website](https://w3id.o
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/nanopubs/dev/files/stream_full.tar.gz](https://w3id.org/riverbench/datasets/nanopubs/dev/files/stream_full.tar.gz)
 
+### <a name="jelly-full"></a> Full quad stream distribution (Jelly)
+
+- **<abbr title="A name given to the resource.">Title</abbr>**: Full quad stream distribution (Jelly)
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: `jelly-full`
+- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `jelly_full.jelly.gz`
+- **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
+    - <abbr title="A full distribution, including all data in the dataset.">Full distribution</abbr> ([rb:fullDistribution](https://w3id.org/riverbench/schema/metadata#fullDistribution))
+    - <abbr title="A streaming distribution in the Jelly binary format.">Jelly distribution</abbr> ([rb:jellyDistribution](https://w3id.org/riverbench/schema/metadata#jellyDistribution))
+    - <abbr title="The dataset is distributed as a stream of RDF quads.">Quad stream distribution</abbr> ([rb:quadStreamDistribution](https://w3id.org/riverbench/schema/metadata#quadStreamDistribution))
+- **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 5,000,000
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 1.56 GB
+- **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/x-jelly-rdf
+- **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
+- **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/nanopubs/dev/files/jelly_full.jelly.gz](https://w3id.org/riverbench/datasets/nanopubs/dev/files/jelly_full.jelly.gz)
+
 ### <a name="flat-full"></a> Full flat distribution
 
 - **<abbr title="A name given to the resource.">Title</abbr>**: Full flat distribution
-- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: flat-full
-- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: flat_full.nq.gz
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: `flat-full`
+- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `flat_full.nq.gz`
 - **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
     - <abbr title="The dataset is distributed as a single flat file.">Flat distribution</abbr> ([rb:flatDistribution](https://w3id.org/riverbench/schema/metadata#flatDistribution))
     - <abbr title="A full distribution, including all data in the dataset.">Full distribution</abbr> ([rb:fullDistribution](https://w3id.org/riverbench/schema/metadata#fullDistribution))
@@ -100,22 +115,37 @@ Full documentation for all versions can be found [on the website](https://w3id.o
 ### <a name="stream-1m"></a> 1M elements quad stream distribution
 
 - **<abbr title="A name given to the resource.">Title</abbr>**: 1M elements quad stream distribution
-- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: stream-1m
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: `stream-1m`
 - **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `stream_1M.tar.gz`
 - **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
     - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
     - <abbr title="The dataset is distributed as a stream of RDF quads.">Quad stream distribution</abbr> ([rb:quadStreamDistribution](https://w3id.org/riverbench/schema/metadata#quadStreamDistribution))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 1,000,000
-- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 277.17 MB
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 277.18 MB
 - **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/trig
 - **<abbr title="The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.">Packaging format</abbr>**: application/tar
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/nanopubs/dev/files/stream_1M.tar.gz](https://w3id.org/riverbench/datasets/nanopubs/dev/files/stream_1M.tar.gz)
 
+### <a name="jelly-1m"></a> 1M elements quad stream distribution (Jelly)
+
+- **<abbr title="A name given to the resource.">Title</abbr>**: 1M elements quad stream distribution (Jelly)
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: `jelly-1m`
+- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `jelly_1M.jelly.gz`
+- **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
+    - <abbr title="A streaming distribution in the Jelly binary format.">Jelly distribution</abbr> ([rb:jellyDistribution](https://w3id.org/riverbench/schema/metadata#jellyDistribution))
+    - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
+    - <abbr title="The dataset is distributed as a stream of RDF quads.">Quad stream distribution</abbr> ([rb:quadStreamDistribution](https://w3id.org/riverbench/schema/metadata#quadStreamDistribution))
+- **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 1,000,000
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 347.02 MB
+- **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/x-jelly-rdf
+- **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
+- **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/nanopubs/dev/files/jelly_1M.jelly.gz](https://w3id.org/riverbench/datasets/nanopubs/dev/files/jelly_1M.jelly.gz)
+
 ### <a name="flat-1m"></a> 1M elements flat distribution
 
 - **<abbr title="A name given to the resource.">Title</abbr>**: 1M elements flat distribution
-- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: flat-1m
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: `flat-1m`
 - **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `flat_1M.nq.gz`
 - **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
     - <abbr title="The dataset is distributed as a single flat file.">Flat distribution</abbr> ([rb:flatDistribution](https://w3id.org/riverbench/schema/metadata#flatDistribution))
@@ -141,10 +171,25 @@ Full documentation for all versions can be found [on the website](https://w3id.o
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/nanopubs/dev/files/stream_100K.tar.gz](https://w3id.org/riverbench/datasets/nanopubs/dev/files/stream_100K.tar.gz)
 
+### <a name="jelly-100k"></a> 100K elements quad stream distribution (Jelly)
+
+- **<abbr title="A name given to the resource.">Title</abbr>**: 100K elements quad stream distribution (Jelly)
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: `jelly-100k`
+- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `jelly_100K.jelly.gz`
+- **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
+    - <abbr title="A streaming distribution in the Jelly binary format.">Jelly distribution</abbr> ([rb:jellyDistribution](https://w3id.org/riverbench/schema/metadata#jellyDistribution))
+    - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
+    - <abbr title="The dataset is distributed as a stream of RDF quads.">Quad stream distribution</abbr> ([rb:quadStreamDistribution](https://w3id.org/riverbench/schema/metadata#quadStreamDistribution))
+- **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 100,000
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 30.89 MB
+- **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/x-jelly-rdf
+- **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
+- **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/nanopubs/dev/files/jelly_100K.jelly.gz](https://w3id.org/riverbench/datasets/nanopubs/dev/files/jelly_100K.jelly.gz)
+
 ### <a name="flat-100k"></a> 100K elements flat distribution
 
 - **<abbr title="A name given to the resource.">Title</abbr>**: 100K elements flat distribution
-- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: flat-100k
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: `flat-100k`
 - **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `flat_100K.nq.gz`
 - **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
     - <abbr title="The dataset is distributed as a single flat file.">Flat distribution</abbr> ([rb:flatDistribution](https://w3id.org/riverbench/schema/metadata#flatDistribution))
@@ -158,7 +203,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
 ### <a name="stream-10k"></a> 10K elements quad stream distribution
 
 - **<abbr title="A name given to the resource.">Title</abbr>**: 10K elements quad stream distribution
-- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: stream-10k
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: `stream-10k`
 - **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `stream_10K.tar.gz`
 - **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
     - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
@@ -170,10 +215,25 @@ Full documentation for all versions can be found [on the website](https://w3id.o
 - **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
 - **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/nanopubs/dev/files/stream_10K.tar.gz](https://w3id.org/riverbench/datasets/nanopubs/dev/files/stream_10K.tar.gz)
 
+### <a name="jelly-10k"></a> 10K elements quad stream distribution (Jelly)
+
+- **<abbr title="A name given to the resource.">Title</abbr>**: 10K elements quad stream distribution (Jelly)
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: `jelly-10k`
+- **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `jelly_10K.jelly.gz`
+- **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
+    - <abbr title="A streaming distribution in the Jelly binary format.">Jelly distribution</abbr> ([rb:jellyDistribution](https://w3id.org/riverbench/schema/metadata#jellyDistribution))
+    - <abbr title="A partial distribution, including only a subset of the data in the dataset. The rb:hasStreamElementCount property indicates the length of this distribution.">Partial distribution</abbr> ([rb:partialDistribution](https://w3id.org/riverbench/schema/metadata#partialDistribution))
+    - <abbr title="The dataset is distributed as a stream of RDF quads.">Quad stream distribution</abbr> ([rb:quadStreamDistribution](https://w3id.org/riverbench/schema/metadata#quadStreamDistribution))
+- **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 10,000
+- **<abbr title="The size of a distribution in bytes.">Byte size</abbr>**: 3.01 MB
+- **<abbr title="The media type of the distribution as defined by IANA">Media type</abbr>**: application/x-jelly-rdf
+- **<abbr title="The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.">Compression format</abbr>**: application/gzip
+- **<abbr title="The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.">Download URL</abbr>**: [https://w3id.org/riverbench/datasets/nanopubs/dev/files/jelly_10K.jelly.gz](https://w3id.org/riverbench/datasets/nanopubs/dev/files/jelly_10K.jelly.gz)
+
 ### <a name="flat-10k"></a> 10K elements flat distribution
 
 - **<abbr title="A name given to the resource.">Title</abbr>**: 10K elements flat distribution
-- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: flat-10k
+- **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: `flat-10k`
 - **<abbr title="Canonical file name of this distribution">Has file name</abbr>**: `flat_10K.nq.gz`
 - **<abbr title="Indicates the type of RiverBench dataset distribution">Has distribution type</abbr>**: 
     - <abbr title="The dataset is distributed as a single flat file.">Flat distribution</abbr> ([rb:flatDistribution](https://w3id.org/riverbench/schema/metadata#flatDistribution))
